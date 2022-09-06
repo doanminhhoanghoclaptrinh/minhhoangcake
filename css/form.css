@@ -1,0 +1,21 @@
+#yn, #ye, #sub, #mes, #dd, #dt, #cn, #yn2, #mes2{
+    height: 40px;
+    box-sizing: border-box;
+}
+textarea{
+    resize: none;
+}
+.formfield *{
+    vertical-align: middle;
+}
+.e{
+    font-size: 0.90em;
+    color: red;
+}
+::placeholder, option, select{
+    font-family: Dancing Script;
+    font-size: 1.5em;
+}
+option{
+    font-size: 0.5em;
+}

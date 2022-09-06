@@ -1,0 +1,33 @@
+img{
+    width: 100%;
+    height: auto;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+    padding: 20px;
+    text-align: center;
+}
+@media screen and (min-width: 993px){
+    #yn, #ye, #sub, #mes, #dd, #dt, #cn, #yn2, #mes2{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 992px){
+    #yn, #ye, #sub, #mes, #dd, #dt, #cn, #yn2, #mes2{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 768px){
+    form{
+        display: inline;
+    }
+    #yn, #ye, #sub, #mes, #dd, #dt, #cn, #yn2, #mes2{
+        width: 95%;
+    }
+    
+}

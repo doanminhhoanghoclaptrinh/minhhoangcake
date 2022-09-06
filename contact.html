@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minh Hoang's Cake Blog</title>
+        <link rel="Stylesheet" href="css/style.css">
+        <link rel="Stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="js/responsive.js"></script>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <header>
+        <h1>Minh Hoang's Cake</h1>
+    </header>
+    <nav class="navbar navbar-inverse topnav" class="Topnav">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse show">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Details-1.html">1</a></li>
+                    <li><a href="Details-2.html">2</a></li>
+                    <li><a href="Details-3.html">3</a></li>
+                </ul>
+                </li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>            
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h2>Contact me</h2>
+        <hr>
+        <form>
+            <label for="yn">Your name:</label>
+            <input type="text" name="yn" id="yn" placeholder="Please enter your full name"><br>
+            <p id="e1" class="e"></p>
+            <label for="ye">Your email:</label>
+            <input type="email" name="ye" id="ye" placeholder="Please enter your email"><br>
+            <p id="e2" class="e"></p>
+            <label for="sub">Subject (required):</label>
+            <input type="text" name="sub" id="sub"><br>
+            <p id="e3" class="e"></p>
+            <p class="formfield"><label for="mes">Message:</label>
+            <textarea name="mes" id="mes"></textarea><br></p>
+            <p id="e4" class="e"></p> 
+            <input type="button" value="Send message" onclick="validatecontactform();">
+        </form>
+        <hr>
+    </main>
+    <footer>
+        <p>&copy;2022 by Doan Minh Hoang</p>
+    </footer>
+    <script src="js/contact.js"></script>
+    </body>

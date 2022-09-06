@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minh Hoang's Cake Blog</title>
+        <link rel="Stylesheet" href="css/style.css">
+        <link rel="Stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>       
+        <script src="js/responsive.js"></script>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <header>
+        <h1>Minh Hoang's Cake</h1>
+    </header>
+    <nav class="navbar navbar-inverse topnav" class="Topnav">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse show">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Details-1.html">1</a></li>
+                    <li><a href="Details-2.html">2</a></li>
+                    <li><a href="Details-3.html">3</a></li>
+                </ul>
+                </li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>            
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h2>Order now</h2>
+        <hr>
+        <form>
+            <label for="cn">Cake name:</label>
+            <select id="cn">
+                <option value="sc" disabled selected>--- Select cake ---</option>
+                <option value="cyc">Classic Yellow Cake</option>
+                <option value="cbc">Coconut Bundt Cake</option>
+                <option value="ccpc">Cream Cheese Pound Cake</option>
+                <option value="gcc">German Chocolate Cake</option>
+            </select><br>
+            <p id="e5" class="e"></p>
+            <label for="yn2">Your name:</label>
+            <input type="text" name="yn" id="yn2"><br> 
+            <p id="e6" class="e"></p>
+            <label for="mes2">Message:</label>
+            <input type="text" name="mes" id="mes2" placeholder="type your text that write on the cake"><br>
+            <p id="e7" class="e"></p>
+            <label>Includes:</label><br>
+            <input type="checkbox" name="can" id="can">
+            <label for="can">Candle</label><br>
+            <input type="checkbox" name="fir" id="fir">
+            <label for="fir">Firework</label><br>
+            <input type="checkbox" name="toy" id="toy">
+            <label for="toy">Toys</label><br>
+            <label for="dd">Deliver date:</label>
+            <input type="date" name="dd" id="dd"><br>
+            <p id="e8" class="e"></p>
+            <p><label for="dt">Deliver to:</label>
+            <textarea name="dt" id="dt"></textarea><br></p>
+            <p id="e9" class="e"></p>
+            <label>Call before deliver?</label>
+            <input type="radio" name="cbd" id="cbd1">
+            <label>Yes</label>
+            <input type="radio" name="cbd" id="cbd2" checked>
+            <label>No</label><br>
+            <input type="button" value="Order now" onclick="validateorderform()">
+        </form>
+        <hr>
+    </main>
+    <footer>
+        <p>&copy;2022 by Doan Minh Hoang</p>
+    </footer>
+    <script src="js/order.js"></script>
+    </body>
+    </html>
